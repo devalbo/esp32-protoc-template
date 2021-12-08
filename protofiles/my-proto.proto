@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+enum MyProtoEnum {
+  MPE_NOT_SET = 0;
+  MPE_OPTION_1 = 1;
+  MPE_OPTION_2 = 2;
+}
+
+message MyProtoItem1 {
+  string name = 1;
+  uint32 commandId = 2;    
+  bytes colorRgbBytes = 3;
+}
+
+message MyProtoSubItem {
+  string value = 1;
+}
+
+message MyProtoItem2 {
+  string item1 = 1;
+  MyProtoSubItem subItem = 2;
+}
+
+
+message MyProtoRequest {
+  oneof request {
+    MyProtoItem1 myProtoItem1 = 1;
+    MyProtoItem2 myProtoItem2 = 2;
+  }
+}

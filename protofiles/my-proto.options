@@ -1,0 +1,5 @@
+MyProtoItem1.name  max_size:32  fixed_length:true
+
+MyProtoItem1.colorRgbBytes  max_size:3  fixed_length:true
+
+MyProtoSubItem.value  max_size: 10  fixed_length:true
