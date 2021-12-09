@@ -1,2 +1,2 @@
 # docker-protoc-template
-Template project for protocol buffer projects using docker-protoc-builder
+Template PlatformIO project for ESP32 boards using protocol buffers (compiled with docker-protoc-builder)
